@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ojongbodu Match Selector</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <main>
+    <!-- Page Header -->
+    <header>
+      <h1>Ojongbodu Match Selector</h1>
+
+      <!-- Admin Authentication -->
+      <div id="auth-controls">
+        <input 
+          id="adminPassword" 
+          type="password" 
+          placeholder="Enter admin password"
+        />
+        <button id="loginBtn">Login</button>
+        <button id="logoutBtn" style="display: none;">Logout</button>
+        <span id="loginStatus"></span>
+      </div>
+    </header>
+
+    <!-- Controls Section -->
+    <section id="controls">
+      <h2>Controls</h2>
+      <div class="buttons">
+        <button id="generate" style="display: none;">Generate Matches</button>
+        <button id="refreshTeams">Reload Teams</button>
+        <button id="saveTeams" style="display: none;">Save Teams</button>
+      </div>
+    </section>
+
+    <!-- Competitions Section -->
+    <section id="competitions">
+      <h2>Competitions</h2>
+      <div class="buttons">
+        <button id="cupBtn">🏆 Run Cup Competition</button>
+        <button id="leagueBtn">⚽ Run League Competition</button>
+      </div>
+
+      <div id="cup-section">
+        <h3>Cup Bracket / Winner</h3>
+        <ul id="cupResults"></ul>
+      </div>
+
+      <div id="league-section">
+        <h3>League Rankings</h3>
+        <ul id="leagueResults"></ul>
+      </div>
+    </section>
+
+    <!-- Matches Section -->
+    <section id="matches-section">
+      <h2>Matches</h2>
+      <div id="matches">
+        <!-- Generated matches will appear here -->
+      </div>
+    </section>
+
+    <!-- Teams Section -->
+    <section id="teams-section">
+      <h2>Teams (Editable)</h2>
+      <div id="teams"></div>
+    </section>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>

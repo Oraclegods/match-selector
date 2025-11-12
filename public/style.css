@@ -1,0 +1,351 @@
+/* ===========================
+   Global Styles
+=========================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', system-ui, Arial, sans-serif;
+  background: #eef2ff; /* soft, friendly background */
+  color: #1f2937;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+/* ===========================
+   Main Container
+=========================== */
+main {
+  width: 100%;
+  max-width: 900px;
+  background: #fff;
+  padding: 30px 24px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+
+/* ===========================
+   Headings
+=========================== */
+h1 {
+  font-size: 2.4rem;
+  color: #4f46e5;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 1.6rem;
+  color: #3730a3;
+  margin: 24px 0 12px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.2rem;
+  color: #1e3a8a;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* ===========================
+   Buttons
+=========================== */
+button {
+  padding: 10px 18px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  background: linear-gradient(135deg, #4f46e5, #6366f1);
+  color: white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+button:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, #3730a3, #4f46e5);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+/* Specific buttons */
+.remove-player {
+  background: #ef4444;
+}
+
+.remove-player:hover {
+  background: #b91c1c;
+}
+
+#cupBtn, #leagueBtn {
+  background: #10b981;
+}
+
+#cupBtn:hover, #leagueBtn:hover {
+  background: #047857;
+}
+
+/* ===========================
+   Buttons Group Layout
+=========================== */
+#controls .buttons,
+#competitions .buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+/* ===========================
+   Sections
+=========================== */
+section {
+  width: 100%;
+}
+
+/* ===========================
+   Matches Section
+=========================== */
+#matches {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+#matches .match {
+  background: #f3f4f6;
+  padding: 14px 18px;
+  border-radius: 12px;
+  text-align: center;
+  font-weight: 500;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+  transition: transform 0.15s ease;
+}
+
+#matches .match:hover {
+  transform: scale(1.02);
+}
+
+/* ===========================
+   Teams Section
+=========================== */
+#teams {
+  width: 100%;
+  margin-top: 20px;
+  padding: 16px;
+  background: #fff5f0;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+/* Individual Team */
+.team {
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 12px;
+  background: #eef2ff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* Player Rows */
+.player-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 8px;
+  transition: all 0.2s ease;
+}
+
+.player-row input,
+.player-row select {
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  min-width: 110px;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+.player-row input:focus,
+.player-row select:focus {
+  outline: none;
+  border-color: #4f46e5;
+  box-shadow: 0 0 5px rgba(79,70,229,0.4);
+}
+
+/* ===========================
+   Competition Results
+=========================== */
+#cupResults, #leagueResults {
+  list-style: none;
+  padding: 0;
+  margin-top: 8px;
+}
+
+#cupResults li, #leagueResults li {
+  padding: 10px 14px;
+  background: #f9fafb;
+  border-radius: 10px;
+  margin-bottom: 6px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  font-weight: 500;
+  transition: transform 0.15s ease, background 0.2s ease;
+}
+
+#cupResults li:hover, #leagueResults li:hover {
+  transform: scale(1.02);
+  background: #e0e7ff;
+}
+
+/* ===========================
+   Responsive
+=========================== */
+@media (max-width: 900px) {
+  main {
+    padding: 24px 20px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  .player-row input,
+  .player-row select {
+    min-width: 90px;
+  }
+}
+
+@media (max-width: 600px) {
+  main {
+    padding: 16px;
+  }
+
+  button {
+    padding: 8px 14px;
+    font-size: 14px;
+  }
+
+  .player-row {
+    gap: 6px;
+  }
+
+  .player-row input,
+  .player-row select {
+    min-width: 70px;
+    font-size: 14px;
+  }
+}
+
+
+
+/* ===========================
+   Generated Matches
+=========================== */
+#matches {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 20px;
+}
+
+/* Individual Match Card */
+#matches .match {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fef9f0; /* light, friendly color */
+  padding: 14px 20px;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.07);
+  transition: all 0.2s ease;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+#matches .match:hover {
+  transform: translateY(-2px);
+  background: #fff4d6;
+}
+
+/* Team Names and Score */
+.match .team-name {
+  flex: 1;
+  text-align: center;
+  color: #1f2937;
+  font-weight: 500;
+}
+
+.match .team-score {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #4f46e5;
+  width: 40px;
+  text-align: center;
+}
+
+/* Optional vs separator */
+.match .vs {
+  font-weight: 500;
+  color: #6b7280;
+  margin: 0 10px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 900px) {
+  #matches .match {
+    flex-direction: column;
+    gap: 6px;
+    font-size: 0.95rem;
+    padding: 12px 16px;
+  }
+
+  .match .team-score {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  #matches .match {
+    font-size: 0.9rem;
+    padding: 10px 14px;
+    border-radius: 12px;
+  }
+
+  .match .vs {
+    margin: 0;
+  }
+}
+
+
+/* style for disabled form elements */
+input.disabled, select.disabled, button.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  filter: grayscale(10%);
+}
+
+/* optional: grey out add/remove player buttons when disabled */
+button.disabled.remove-player { background: #d1d5db; color: #6b7280; }

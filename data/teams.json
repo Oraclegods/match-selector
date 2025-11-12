@@ -1,0 +1,225 @@
+{
+  "Team A": [
+    {
+      "name": "Bobby",
+      "position": "Forward",
+      "rating": 95
+    },
+    {
+      "name": "DeOne",
+      "position": "Midfielder",
+      "rating": 99
+    },
+    {
+      "name": "Damilesky",
+      "position": "Midfielder",
+      "rating": 83
+    },
+    {
+      "name": "Tobi",
+      "position": "Defender",
+      "rating": 83
+    },
+    {
+      "name": "Adesh",
+      "position": "Forward",
+      "rating": 75
+    },
+    {
+      "name": "Kenny",
+      "position": "Forward",
+      "rating": 72
+    },
+    {
+      "name": "Taiwo",
+      "position": "Midfielder",
+      "rating": 77
+    },
+    {
+      "name": "Havetz",
+      "position": "Midfielder",
+      "rating": 77
+    },
+    {
+      "name": "Hammad",
+      "position": "Defender",
+      "rating": 74
+    },
+    {
+      "name": "Uthman",
+      "position": "Defender",
+      "rating": 75
+    },
+    {
+      "name": "Oscar",
+      "position": "Forward",
+      "rating": 77
+    }
+  ],
+  "Team B": [
+    {
+      "name": "Thompson",
+      "position": "Defender",
+      "rating": 99
+    },
+    {
+      "name": "Omoh",
+      "position": "Defender",
+      "rating": 82
+    },
+    {
+      "name": "Jbest",
+      "position": "Defender",
+      "rating": 80
+    },
+    {
+      "name": "Ibrahim",
+      "position": "Forward",
+      "rating": 79
+    },
+    {
+      "name": "Sunks",
+      "position": "Forward",
+      "rating": 70
+    },
+    {
+      "name": "Idan",
+      "position": "Midfielder",
+      "rating": 72
+    },
+    {
+      "name": "Engr",
+      "position": "Midfielder",
+      "rating": 77
+    },
+    {
+      "name": "Dutiful",
+      "position": "Defender",
+      "rating": 75
+    },
+    {
+      "name": "Praise",
+      "position": "Defender",
+      "rating": 75
+    },
+    {
+      "name": "Marley",
+      "position": "Forward",
+      "rating": 76
+    }
+  ],
+  "Team C": [
+    {
+      "name": "Hippopo",
+      "position": "Defender",
+      "rating": 90
+    },
+    {
+      "name": "Dami",
+      "position": "Forward",
+      "rating": 99
+    },
+    {
+      "name": "Odegaard",
+      "position": "Forward",
+      "rating": 99
+    },
+    {
+      "name": "Habib",
+      "position": "Forward",
+      "rating": 75
+    },
+    {
+      "name": "Malik",
+      "position": "Forward",
+      "rating": 72
+    },
+    {
+      "name": "Shakiri",
+      "position": "Midfielder",
+      "rating": 70
+    },
+    {
+      "name": "Taiwo Dada",
+      "position": "Forward",
+      "rating": 80
+    },
+    {
+      "name": "Simple",
+      "position": "Midfielder",
+      "rating": 70
+    },
+    {
+      "name": "Abdulahi",
+      "position": "Forward",
+      "rating": 82
+    },
+    {
+      "name": "Master",
+      "position": "Defender",
+      "rating": 77
+    },
+    {
+      "name": "Wale",
+      "position": "Forward",
+      "rating": 84
+    }
+  ],
+  "Team D": [
+    {
+      "name": "Suarez",
+      "position": "Forward",
+      "rating": 95
+    },
+    {
+      "name": "AY",
+      "position": "Midfielder",
+      "rating": 87
+    },
+    {
+      "name": "Kahuna",
+      "position": "Midfielder",
+      "rating": 89
+    },
+    {
+      "name": "Samad",
+      "position": "Forward",
+      "rating": 86
+    },
+    {
+      "name": "Solomon",
+      "position": "Forward",
+      "rating": 88
+    },
+    {
+      "name": "Sodiq",
+      "position": "Midfielder",
+      "rating": 83
+    },
+    {
+      "name": "Ozil",
+      "position": "Midfielder",
+      "rating": 90
+    },
+    {
+      "name": "Seun",
+      "position": "Defender",
+      "rating": 83
+    },
+    {
+      "name": "Tosin",
+      "position": "Defender",
+      "rating": 83
+    },
+    {
+      "name": "Lavida",
+      "position": "Midfielder",
+      "rating": 87
+    },
+    {
+      "name": "D Block",
+      "position": "Midfielder",
+      "rating": 92
+    }
+  ]
+}
