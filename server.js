@@ -9,7 +9,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 const DATA_PATH = path.join(__dirname, 'data', 'teams.json');
-const PUBLIC_PATH = path.join(__dirname, 'public');
+//const PUBLIC_PATH = path.join(__dirname, 'public');
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -24,7 +24,8 @@ app.use(session({
 }));
 
 // Serve static frontend
-app.use(express.static(PUBLIC_PATH));
+//app.use(express.static(PUBLIC_PATH));
+app.use(express.static(__dirname));
 
 // --- Helpers ---
 function readTeams() {
